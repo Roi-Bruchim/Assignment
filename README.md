@@ -11,8 +11,11 @@ For efficiency, I used only a reduced subset (about 70 quotes).
 ### **Frontend Web Interface**
 <img src="images/assignment2.png" width="600">
 
-### **Swagger API Test**
 <img src="images/assignment3.png" width="600">
+
+### **Swagger API Test**
+
+<img src="images/assignment1.png" width="600">
 
 ### **Server Running (CMD Output)**
 <img src="images/assignment4.png" width="600">
@@ -194,5 +197,6 @@ This project demonstrates:
 - A working frontend + backend setup  
 
 All components work together to form a complete quote-retrieval system.
+
 
 
