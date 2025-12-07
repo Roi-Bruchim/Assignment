@@ -8,13 +8,18 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+# this file implements the API server that the frontend calls to search quotes
+# it connects to the ChromaDB database created by ingest.py
+# it uses the same OpenAI embedding model to embed the search query
+# and performs a vector similarity search to find relevant quotes
+
 # FastAPI application instance
 app = FastAPI()
 
-# --- CORS so that the frontend (file:// or localhost) can call the API ---
+# --- CORS so that the frontend (file:// or localhost) can call the API --- 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],        # in production you would restrict this
+    allow_origins=["*"],       
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

@@ -5,6 +5,11 @@ from chromadb.utils import embedding_functions
 from dotenv import load_dotenv
 load_dotenv()
 
+#this file ingests a dataset of quotes into a ChromaDB vector database
+# each quote is embedded using an OpenAI embedding model
+# and stored in a collection along with metadata (author, category) for retrieval
+# after ingestion, the collection can be queried for similar quotes based on text input
+
 
 JSON_PATH = "data/quotes.json"   # Path to the dataset
 COLLECTION_NAME = "quotes"       # Collection name for ChromaDB
