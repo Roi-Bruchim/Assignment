@@ -38,7 +38,7 @@ The system includes:
 - **app.py** – Runs the FastAPI server, receives a user query, performs semantic search using ChromaDB, and returns the most relevant quotes.
 - **ingest.py** – Loads the quotes dataset, generates embeddings for each quote, and stores them in ChromaDB for fast similarity search.
 - **data/quotes.json** – The original dataset containing the selected quotes.
-- **chroma/** – The local vector database created automatically after running the ingest script (excluded from Git).
+- **chroma/** – The local vector database created automatically after running the ingest script.
 - **requirements.txt** – Contains all required Python dependencies.
 - **.env** – Stores the API key for OpenAI embeddings (kept out of Git for security).
   
@@ -194,4 +194,5 @@ This project demonstrates:
 - A working frontend + backend setup  
 
 All components work together to form a complete quote-retrieval system.
+
 
