@@ -19,7 +19,7 @@ async function sendMessage() {
   const text = input.value.trim();
   if (!text) return;
 
-  // הודעת המשתמש
+  
   addMessage(text, "user");
   input.value = "";
 
